@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalorien rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="style">
+      <header>
+        <h1>Kalorien rechner</h1>
+      </header>
+      <main>
+        <section>
+          <label for="größe">Körpergröße</label><br />
+          <input type="number" name="größe" id="größe" />
+        </section>
+        <section>
+          <label for="age">Alter</label><br />
+          <input type="number" name="age" id="age" />
+        </section>
+        <section>
+          <label for="gewicht">Gewicht</label><br />
+          <input type="number" name="gewicht" id="gewicht" />
+        </section>
+        <section>
+          <p class="text">Körperbau</p>
+          <input type="radio" name="weiblich" id="weiblich" />
+          <label for="weiblich">Weiblich</label><br />
+          <input type="radio" name="weiblich" id="männlich" />
+          <label for="weiblich">Männlich</label>
+        </section>
+        <section>
+          <p class="text">Arbeits- und Freizeitaktivität</p>
+          <select name="list" id="list">
+            <option value="Schlafen">Schlafen</option>
+            <option value="Nur Sitzen">Nur Sitzen oder Liegen</option>
+            <option value="Aktivität">
+              Aktivität in der Freizeit, z.B. BüroArbeit
+            </option>
+            <option value="Stehender">
+              Stehender Tätigkeit, z.B. Studierende, Kraftfahrer
+            </option>
+            <option value="Verkäufer">
+              z.B. Verkäufer, Kellner, Handwerker
+            </option>
+            <option value="Körperlich">
+              Körperlich anstrengende beufliche Arbeit
+            </option>
+          </select>
+        </section>
+        <section class="btn">
+          <button>Submite</button>
+        </section>
+        <section class="flex">
+          <section>
+            <p>Grundumsatz</p>
+            <p>kcal</p>
+            <p class="outPutKcalG">0</p>
+            <p>kJ</p>
+          </section>
+          <section>
+            <p>Gesamtumsatz</p>
+            <p>kcal</p>
+            <p class="outPutKcalGe">0</p>
+            <p>kJ</p>
+          </section>
+        </section>
+      </main>
+      <footer></footer>
+    </section>
+    <script src="./assets/Js/main.js"></script>
+  </body>
+</html>
